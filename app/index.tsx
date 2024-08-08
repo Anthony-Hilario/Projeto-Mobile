@@ -14,9 +14,11 @@ export default function Index() {
         </TouchableOpacity>
       </Link>
 
-      <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}><Image source={require('@/assets/images/globo.png')}/></Text>
-      </TouchableOpacity>
+      <Link href={'continentes'}>
+        <TouchableOpacity style={styles.button}>
+          <Text style={styles.buttonText}><Image source={require('@/assets/images/globo.png')}/></Text>
+        </TouchableOpacity>
+      </Link>
     </View>
 
     <View style={styles.row}>

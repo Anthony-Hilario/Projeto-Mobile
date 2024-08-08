@@ -7,7 +7,7 @@ export default function Popup() {
     <View style={styles.container}>
       <Image source={require('@/assets/images/Rectangle.png')} style={styles.retangulo} />
       <Image source={require('@/assets/images/arara-home.png')} style={styles.imgPopup} />
-      <Text>Enciclopédia Selvagem</Text>
+      <Text style={styles.textLogo} >Enciclopédia Selvagem</Text>
 
       <StatusBar barStyle={'dark-content'} />
     </View>

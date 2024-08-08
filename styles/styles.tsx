@@ -48,8 +48,8 @@ export const styles = StyleSheet.create({
         height: 100,
       },
       imgPopup: {
-        width: 100,
-        height: 100,
+        width: 200,
+        height: 200,
       },
       retangulo: {
         zIndex: -1,
@@ -66,5 +66,10 @@ export const styles = StyleSheet.create({
         borderRadius: 10,
         top: 30,
         position: 'absolute',
+      },
+      textLogo: {
+        marginTop: 30,
+        color: '#FFFFFF',
+        fontSize: 25,
       }
 })
