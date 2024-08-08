@@ -1,4 +1,4 @@
-import { Button, Image, StatusBar, Text, View } from "react-native";
+import { Image, StatusBar, Text, View } from "react-native";
 import { styles } from "@/styles/styles";
 
 export default function Popup() {
