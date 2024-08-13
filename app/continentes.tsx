@@ -30,7 +30,6 @@ export default function Continentes() {
         <View style={styles.row} >
             <TouchableOpacity>
                 <Image source={require('@/assets/images/antarctica.png')} style={styles.continentes} />
-                <Image source={require('@/assets/images/AmericaSul.svg')} />
             </TouchableOpacity>
 
             <TouchableOpacity>

@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 import { Image, StatusBar, Text, View } from "react-native";
-=======
-import { Button, Image, StatusBar, Text, View } from "react-native";
-import { Link } from "expo-router";
->>>>>>> 5d97ca9c74b83dea66088987b869b42fc923a683
 import { styles } from "@/styles/styles";
 
 export default function Popup() {
