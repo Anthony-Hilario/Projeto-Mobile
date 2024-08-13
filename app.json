@@ -19,8 +19,12 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+<<<<<<< HEAD
       },
       "package": "com.anonymous.Projetomobile"
+=======
+      }
+>>>>>>> 5d97ca9c74b83dea66088987b869b42fc923a683
     },
     "web": {
       "bundler": "metro",

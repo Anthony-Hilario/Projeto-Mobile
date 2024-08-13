@@ -1,4 +1,4 @@
-import { StatusBar, Text, View, Image, TextInput } from "react-native";
+import { StatusBar, Text, View, Image, TouchableOpacity, TextInput } from "react-native";
 import { Link } from "expo-router";
 import { styles } from "@/styles/styles";
 
@@ -8,6 +8,8 @@ export default function Animais() {
         <Text>Enciclopédia Selvagem - Animais em Geral</Text>
         <TextInput placeholder="Search..." style={styles.input} />
         <Image source={require('@/assets/images/pata.png')} />
+        <Text>Animais em Geral</Text>
+        <TextInput placeholder="Search..." style={styles.input} />
 
         <StatusBar barStyle={'dark-content'}/>
     </View>
