@@ -26,8 +26,17 @@ export const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: 'bold',
       },
+
+      button0: {
+        backgroundColor: '#9EC7EC',
+      },
+
       button1: {
-        
+        backgroundColor: '#6EC19A',
+      },
+
+      button2: {
+        backgroundColor: '#D49E34',
       },
 
       img: {
@@ -71,5 +80,11 @@ export const styles = StyleSheet.create({
         marginTop: 30,
         color: '#FFFFFF',
         fontSize: 25,
+      },
+
+      continentes: {
+        width: 150,
+        height: 150,
+        marginTop: 10,
       }
 })
