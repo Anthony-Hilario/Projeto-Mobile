@@ -3,6 +3,7 @@ import { styles } from "@/styles/styles";
 import QRCodeScanner from "react-native-qrcode-scanner";
 import { Camera, useCameraPermission, useCameraDevice } from 'react-native-vision-camera';
 import { useRef } from "react";
+import React from "react";
 
 export default function Animais() {
     const device = useCameraDevice('back');

@@ -1,6 +1,7 @@
 import { StatusBar, Text, View, Image, TouchableOpacity, TextInput } from "react-native";
 import { Link } from "expo-router";
 import { styles } from "@/styles/styles";
+import React from "react";
 
 export default function Animais() {
   return (
