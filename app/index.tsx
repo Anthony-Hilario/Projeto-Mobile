@@ -2,6 +2,7 @@ import { StatusBar, Text, View, Image, TouchableOpacity, Button } from "react-na
 import { Link } from "expo-router";
 import { styles } from "@/styles/styles";
 import { songJoJo, playSound } from "./sounds";
+import React from "react";
 
 export default function Index() {
   return (
