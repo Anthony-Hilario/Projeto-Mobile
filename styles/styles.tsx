@@ -39,6 +39,34 @@ export const styles = StyleSheet.create({
         backgroundColor: '#D49E34',
       },
 
+      screenColor: {
+        backgroundColor: '#3DAB41',
+      },
+
+      boxName: {
+        backgroundColor: '#FFFFFF',
+        fontSize: 10,
+        borderRadius: 8,
+      },
+
+      animalInfo: {
+        backgroundColor: '#FFFFFF',
+        borderRadius: 8,
+        marginHorizontal: '5%',
+        marginTop: 10,
+        padding: 10,
+        flex: 1,
+      },
+
+      btnSound: {
+        alignSelf: 'flex-start',
+      },
+
+      btnVoltar: {
+        alignSelf: 'flex-start',
+        padding: 10
+      },
+
       img: {
         position: 'absolute',
         width: '100%',
@@ -73,8 +101,6 @@ export const styles = StyleSheet.create({
         width: '80%',
         backgroundColor: '#FFFFFF',
         borderRadius: 10,
-        top: 30,
-        position: 'absolute',
       },
       textLogo: {
         marginTop: 30,
