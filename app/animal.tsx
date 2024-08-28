@@ -4,7 +4,7 @@ import { styles } from '@/styles/styles';
 import { Link } from 'expo-router';
 import { songJoJo } from './sounds';
 
-const Animais = () => {
+export default function Animais() {
   return (
     <View style={[styles.container, styles.screenColor]}>
     <Link href={'/menu'} style={styles.btnVoltar}>
@@ -29,4 +29,3 @@ const Animais = () => {
   );
 };
 
-export default Animais;

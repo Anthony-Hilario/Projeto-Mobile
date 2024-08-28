@@ -47,6 +47,7 @@ export const styles = StyleSheet.create({
         backgroundColor: '#FFFFFF',
         fontSize: 10,
         borderRadius: 8,
+        marginBottom: 5,
       },
 
       animalInfo: {
