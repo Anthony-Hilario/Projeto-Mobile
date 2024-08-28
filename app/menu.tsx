@@ -30,7 +30,7 @@ export default function Index() {
     </View>
 
     <View style={styles.row}>
-      <Link href={'/'}>
+      <Link href={'/menu'}>
         <TouchableOpacity style={[styles.button, styles.button2]}>
           <Text style={styles.buttonText}><Image source={require('@/assets/images/camera.png')}/></Text>
         </TouchableOpacity>

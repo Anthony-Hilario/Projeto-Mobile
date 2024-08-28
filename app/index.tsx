@@ -1,18 +1,18 @@
 import { Image, StatusBar, Text, View } from "react-native";
 import { styles } from "@/styles/styles";
 import React, { useEffect } from "react";
-import { useNavigation } from "@react-navigation/native";
+import { useRouter } from "expo-router";
 
 export default function Popup() {
-  const navigation = useNavigation();
+  const route = useRouter();
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigation.navigate('menu');
+      route.push('/menu');
     }, 2000);
 
     return () => clearTimeout(timer);
-  }, [navigation]);
+  }, [route]);
 
   return (
     <View style={styles.container}>
