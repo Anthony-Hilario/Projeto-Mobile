@@ -1,46 +1,26 @@
-import { StatusBar, Text, View, Image, TouchableOpacity, Button } from "react-native";
-import { Link } from "expo-router";
+import { Image, StatusBar, Text, View } from "react-native";
 import { styles } from "@/styles/styles";
-import { Audio } from 'expo-av';
-import React from "react";
+import React, { useEffect } from "react";
+import { useRouter } from "expo-router";
 
-export default function Index() {
-  const playSound = async () => {
-    const { sound } = await Audio.Sound.createAsync(require('@/assets/sounds/panda.mp3'));
-    await sound.playAsync();
-  };
+export default function Popup() {
+  const route = useRouter();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      route.push('/menu');
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, [route]);
 
   return (
-  <View style={styles.container} >
-    <Text style={styles.titulo} >Enciclopédia Animal</Text>
-    <Button title="Press Me" onPress={playSound} />
-      
-    <View style={styles.row}>
-      <Link href={'/animais'}>
-        <TouchableOpacity style={[styles.button, styles.button0]}>
-          <Text style={styles.buttonText}><Image source={require('@/assets/images/lupa.svg')}/></Text>
-        </TouchableOpacity>
-      </Link>
+    <View style={styles.container}>
+      <Image source={require('@/assets/images/Rectangle.png')} style={styles.retangulo} />
+      <Image source={require('@/assets/images/arara-home.png')} style={styles.imgPopup} />
+      <Text style={styles.textLogo} >Enciclopédia Selvagem</Text>
 
-      <Link href={'/continentes'}>
-        <TouchableOpacity style={[styles.button, styles.button1]}>
-          <Text style={styles.buttonText}><Image source={require('@/assets/images/globo.png')}/></Text>
-        </TouchableOpacity>
-      </Link>
+      <StatusBar barStyle={'dark-content'} />
     </View>
-
-    <View style={styles.row}>
-      <Link href={'/'}>
-        <TouchableOpacity style={[styles.button, styles.button2]}>
-          <Text style={styles.buttonText}><Image source={require('@/assets/images/camera.png')}/></Text>
-        </TouchableOpacity>
-      </Link>
-    </View>
-
-    <Image style={styles.img} source={require('@/assets/images/arara-azul.jpg')} />
-
-
-    <StatusBar barStyle={'dark-content'} hidden />
-  </View>
   );
 }
