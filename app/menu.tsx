@@ -30,11 +30,8 @@ export default function Index() {
     </View>
 
     <View style={styles.row}>
-      <Link href={'/menu'}>
-        <TouchableOpacity style={[styles.button, styles.button2]}>
-          <Text style={styles.buttonText}><Image source={require('@/assets/images/camera.png')}/></Text>
-        </TouchableOpacity>
-      </Link>
+      <Text style={styles.textoMenu}>Pesquisar pelo Nome</Text>
+      <Text style={styles.textoMenu}>Pesquisa por Continente</Text>
     </View>
 
     <Image style={styles.img} source={require('@/assets/images/arara-azul.jpg')} />

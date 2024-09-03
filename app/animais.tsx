@@ -1,4 +1,4 @@
-import { StatusBar, Text, View, Image, TouchableOpacity, TextInput, Button } from "react-native";
+import { StatusBar, Text, View, Image, TextInput, Button } from "react-native";
 import { Link } from "expo-router";
 import { styles } from "@/styles/styles";
 import React from "react";
@@ -20,5 +20,5 @@ export default function Animais() {
 
 /*
 esta pagina sera usada como multipagina para animais,
-por meio de uma pilha de outras paginas puxadas do banco de dados
+por meio de uma pilha de outras paginas puxadas pela navegacao dinamica
 */

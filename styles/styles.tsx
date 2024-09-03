@@ -35,8 +35,13 @@ export const styles = StyleSheet.create({
         backgroundColor: '#6EC19A',
       },
 
-      button2: {
-        backgroundColor: '#D49E34',
+      textoMenu: {
+        backgroundColor: '#FFFFFF',
+        width: 155,
+        height: 20,
+        margin: 10,
+        alignContent: 'center',
+        borderRadius: 10,
       },
 
       screenColor: {
