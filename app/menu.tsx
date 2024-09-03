@@ -1,14 +1,15 @@
+import React from "react";
 import { StatusBar, Text, View, Image, TouchableOpacity, Button } from "react-native";
 import { Link } from "expo-router";
 import { styles } from "@/styles/styles";
 import { songJoJo, playSound } from "./sounds";
-import React from "react";
+
 
 export default function Index() {
   return (
   <View style={styles.container} >
     <Text style={styles.titulo} >Enciclopédia Animal</Text>
-    <Button title="Press Me" onPress={playSound} />
+    <Button title="Song Panda" onPress={playSound} />
     <Button title="ZA WARUDO!" onPress={songJoJo} />
     
     <Link href={'/animal'}>
