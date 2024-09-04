@@ -1,19 +1,42 @@
-import { FlatList, StatusBar, Text, View } from "react-native";
-import { Link } from "expo-router";
+import { Button, StatusBar, Text, View } from "react-native";
 import { styles } from "@/styles/styles";
 import React, {useState} from "react";
+import { Link } from "expo-router";
 import { Picker } from '@react-native-picker/picker';
 
 export default function Continentes() {
-    const [selectedValue, setSelectedValue] = useState("option1");
-
+    const [selectedValue, setSelectedValue] = useState("SA");
+    
+    const Resposta = () => { 
+      switch (selectedValue) {
+      case "SA":
+        return <Text>Xablau 1</Text>;
+      case "NA":
+        return <Text>Xablau 2</Text>;
+      case "AS":
+        return <Text>Xablau 3</Text>;
+      case "EU":
+        return <Text>Xablau 4</Text>;
+      case "OC":
+        return <Text>Xablau 5</Text>;
+      case "AN":
+        return <Text>Xablau 6</Text>;
+      case "AF":
+        return <Text>Xablau 7</Text>;
+      default:
+        break;
+    }
+  }
   return (
     <View style={styles.container} >
-        <Text>Pesquisa por Continentes</Text>
+      <Link href={'/menu'}>
+        <Button title="Voltar"/>
+      </Link>
+      <Text>Pesquisa por Continentes</Text>
 
-        <Picker
-        selectedValue={selectedValue}
-        onValueChange={(itemValue) => setSelectedValue(itemValue)}
+      <Picker
+      selectedValue={selectedValue}
+      onValueChange={(itemValue) => setSelectedValue(itemValue)}
       >
         <Picker.Item label="América do Sul" value="SA" />
         <Picker.Item label="América do Norte" value="NA" />
@@ -24,9 +47,15 @@ export default function Continentes() {
         <Picker.Item label="África" value="AF" />
       </Picker>
       <Text>Opção selecionada: {selectedValue}</Text>
+      <Resposta />
 
 
         <StatusBar barStyle={'dark-content'}/>
     </View>
   );
 }
+
+/*
+Usar o switch como um norte para o retorno dos dados do banco de dados,
+nesse caso, os animais que correspondem ao seu respectivo continente.
+*/

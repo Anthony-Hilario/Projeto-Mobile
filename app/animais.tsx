@@ -12,8 +12,9 @@ export default function Animais() {
         <TextInput placeholder="Search..." style={styles.input} />
         <Text>Enciclopédia Selvagem - Animais em Geral</Text>
         <Image source={require('@/assets/images/pata.png')} />
+        
 
-        <StatusBar barStyle={'dark-content'}/>
+        <StatusBar barStyle={'dark-content'} hidden={true} />
     </View>
   );
 }

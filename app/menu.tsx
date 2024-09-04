@@ -8,7 +8,7 @@ import { songJoJo, playSound } from "./sounds";
 export default function Index() {
   return (
   <View style={styles.container} >
-    <Text style={styles.titulo} >Enciclopédia Animal</Text>
+    <Text style={styles.titulo}>Enciclopédia Animal</Text>
     <Button title="Song Panda" onPress={playSound} />
     <Button title="ZA WARUDO!" onPress={songJoJo} />
     
