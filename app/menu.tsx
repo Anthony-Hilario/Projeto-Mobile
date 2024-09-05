@@ -8,12 +8,10 @@ import { songJoJo, playSound } from "./sounds";
 export default function Index() {
   return (
   <View style={styles.container} >
-    <Text style={styles.titulo} >Enciclopédia Animal</Text>
-    <Button title="Song Panda" onPress={playSound} />
-    <Button title="ZA WARUDO!" onPress={songJoJo} />
+    <Text style={styles.titulo}>Enciclopédia Animal</Text>
     
     <Link href={'/animal'}>
-      <Button title="Panda" />
+      <Button title="Pag. Panda" />
     </Link>
 
     <View style={styles.row}>
@@ -31,11 +29,8 @@ export default function Index() {
     </View>
 
     <View style={styles.row}>
-      <Link href={'/'}>
-        <TouchableOpacity style={[styles.button, styles.button2]}>
-          <Text style={styles.buttonText}><Image source={require('@/assets/images/camera.png')}/></Text>
-        </TouchableOpacity>
-      </Link>
+      <Text style={styles.textoMenu}>Pesquisar pelo Nome</Text>
+      <Text style={styles.textoMenu}>Pesquisa por Continente</Text>
     </View>
 
     <Image style={styles.img} source={require('@/assets/images/arara-azul.jpg')} />
