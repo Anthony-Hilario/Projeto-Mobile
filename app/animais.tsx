@@ -19,7 +19,11 @@ export default function Animais() {
       <Link href={'/menu'} style={styles.btnVoltar}>
       <Button title="Voltar"/>
     </Link>
+      <Link href={'/menu'} style={styles.btnVoltar}>
+      <Button title="Voltar"/>
+    </Link>
         <TextInput placeholder="Search..." style={styles.input} />
+        <Text>Enciclopédia Selvagem - Animais em Geral</Text>
         <Text>Enciclopédia Selvagem - Animais em Geral</Text>
         <Image source={require('@/assets/images/pata.png')} />
         <View>
