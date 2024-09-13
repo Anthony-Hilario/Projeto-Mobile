@@ -44,6 +44,13 @@ export const styles = StyleSheet.create({
         borderRadius: 10,
       },
 
+      emptyContainer: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',   
+        padding: 20,            
+      },
+
       screenColor: {
         backgroundColor: '#3DAB41',
       },

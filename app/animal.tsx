@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, Button, Image, TouchableOpacity } from 'react-native';
 import { styles } from '@/styles/styles';
 import { Link } from 'expo-router';
-import { songJoJo } from './sounds';
+import { playSound } from './sounds';
 
 export default function Animais() {
   return (
@@ -17,7 +17,7 @@ export default function Animais() {
     </View>
     <Image source={require('@/assets/images/panda.png')} />
     <View style={styles.animalInfo}>
-        <TouchableOpacity onPress={songJoJo} style={styles.btnSound} >
+        <TouchableOpacity onPress={playSound} style={styles.btnSound} >
             <Image source={require('@/assets/images/sound.png')}/>
         </TouchableOpacity>
         <Text>

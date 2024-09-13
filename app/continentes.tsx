@@ -33,11 +33,6 @@ export default function Continentes() {
       <Link href={'/menu'}>
         <Button title="Voltar"/>
       </Link>
-      <Text>Pesquisa por Continentes</Text>
-      <Link href={'/menu'}>
-        <Button title="Voltar"/>
-      </Link>
-      <Text>Pesquisa por Continentes</Text>
 
       <Picker
       selectedValue={selectedValue}
