@@ -19,6 +19,3 @@ obs.txt
 
 expo-env.d.ts
 # @end expo-cli
-
-package.json
-package-lock.json
