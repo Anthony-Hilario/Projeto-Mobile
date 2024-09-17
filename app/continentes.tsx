@@ -29,8 +29,8 @@ export default function Continentes() {
     }
   }
   return (
-    <View style={styles.container} >
-      <Link href={'/menu'}>
+    <View style={styles.container}>
+      <Link href={'/menu'} style={styles.botaoVoltar}>
         <Button title="Voltar"/>
       </Link>
 

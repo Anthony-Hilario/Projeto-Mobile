@@ -79,7 +79,8 @@ export default function Animais() {
           renderItem={({ item }) => 
           
           <View style={[styles.container, styles.row]}>
-            <Image source={require(`@/assets/images/bufalo_americano.png`)} />
+            <Image source={{uri: `http://localhost:8081${item.imagem}`}} 
+            style={{width: 100, height: 100}} />
             <Text>{item.nome}</Text>
           </View>}
         />

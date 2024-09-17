@@ -80,6 +80,13 @@ export const styles = StyleSheet.create({
         padding: 10
       },
 
+      botaoVoltar: {
+        alignSelf: 'flex-start',
+        padding: 10,
+        position: 'absolute',
+        top: 1,
+      },
+
       img: {
         position: 'absolute',
         width: '100%',
