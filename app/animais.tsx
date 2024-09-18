@@ -1,4 +1,5 @@
-import { StatusBar, Text, View, Image, TextInput, Button, FlatList, ActivityIndicator } from "react-native";
+import { StatusBar, Text, View, Image, TextInput, 
+         Button, FlatList, ActivityIndicator, TouchableOpacity } from "react-native";
 import { Link } from "expo-router";
 import { styles } from "@/styles/styles";
 import React, { useEffect, useState } from "react";
@@ -78,10 +79,14 @@ export default function Animais() {
           keyExtractor={item => item._id.toString()}
           renderItem={({ item }) => 
           
-          <View style={[styles.container, styles.row]}>
-            <Image source={{uri: `http://localhost:8081${item.imagem}`}} 
-            style={{width: 100, height: 100}} />
-            <Text>{item.nome}</Text>
+          <View style={styles.container}>
+            <Link href={'/animal'} style={[styles.container,styles.animalBoxSearch]}>{/* trocar o link para ficar dinamico */}
+              <TouchableOpacity style={styles.row}>
+                <Image source={{uri: `http://localhost:8081${item.imagem}`}}
+                style={{width: 100, height: 100}} />
+                <Text>{item.nome}</Text>
+              </TouchableOpacity>
+            </Link>
           </View>}
         />
       )}

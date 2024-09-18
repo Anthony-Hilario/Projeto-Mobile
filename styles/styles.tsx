@@ -11,6 +11,14 @@ export const styles = StyleSheet.create({
       row: {
         flexDirection: 'row',
       },
+
+      animalBoxSearch: {
+        backgroundColor: '#3DAB41',
+        borderRadius: 8,
+        height: '4%',
+        width: '80%',
+      },
+
       button: {
         backgroundColor: '#3498db',
         width: 150,
