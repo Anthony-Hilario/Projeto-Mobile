@@ -8,7 +8,7 @@ export default function Popup() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      route.push('/menu');
+      route.replace('/menu');
     }, 2000);
 
     return () => clearTimeout(timer);
@@ -18,7 +18,7 @@ export default function Popup() {
     <View style={styles.container}>
       <Image source={require('@/assets/images/Rectangle.png')} style={styles.retangulo} />
       <Image source={require('@/assets/images/arara-home.png')} style={styles.imgPopup} />
-      <Text style={styles.textLogo} >Enciclopédia Selvagem</Text>
+      <Text style={styles.textLogo}>Enciclopédia Selvagem</Text>
 
       <StatusBar barStyle={'dark-content'} />
     </View>
